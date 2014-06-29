@@ -2,98 +2,97 @@
 %define debug_package %{nil}
 %define dsver V1R5.1
 
-Summary:	With DraftSight, you can easily create professional CAD drawings. Supported file formats are DWT, DXF and DWG.
+Summary:	Professional CAD system: supported file formats are DWT, DXF and DWG
 Name:		draftsight
 Version:	2014.3.70
-Release:	2%{?dist}
+Release:	2%{?dist}.2
 
-License:	see /usr/share/doc/draftsight/copyright
-URL:		http://www.3ds.com/
+License:	Standalone license, activation required
+URL:		http://www.3ds.com/products-services/draftsight/download-draftsight
 Source0:	http://dl-ak.solidworks.com/nonsecure/draftsight/%{dsver}/draftSight.rpm
-
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	desktop-file-utils
 
-Requires:	/bin/bash
-Requires:	/bin/sh
-Requires:	libAecGeometry.so.1
-Requires:	libDDKERNEL.so.1
-Requires:	libDwfCore.so.1
-Requires:	libDwfToolkit.so.1
-Requires:	libFXCommandsBase.so.1
-Requires:	libFXCrashRpt.so.1
-Requires:	libFXExport.so.1
-Requires:	libFXLISP.so.1
-Requires:	libFXRenderBase.so.1
-Requires:	libFxFileDialogs.so.1
-Requires:	libFxImages.so.1
-Requires:	libQtCore.so.4
-Requires:	libQtDBus.so.4
-Requires:	libQtGui.so.4
-Requires:	libQtHelp.so.4
-Requires:	libQtMultimedia.so.4
-Requires:	libQtNetwork.so.4
-Requires:	libQtOpenGL.so.4
-Requires:	libQtSql.so.4
-Requires:	libQtSvg.so.4
-Requires:	libQtWebKit.so.4
-Requires:	libQtXml.so.4
-Requires:	libQtXmlPatterns.so.4
-Requires:	libTD_AcisBuilder.so.1
-Requires:	libTD_Alloc.so.1
-Requires:	libTD_Br.so.1
-Requires:	libTD_BrepRenderer.so.1
-Requires:	libTD_Db.so.1
-Requires:	libTD_DbRoot.so.1
-Requires:	libTD_Dwf7Export.so.1
-Requires:	libTD_FtFontEngine.so.1
-Requires:	libTD_Ge.so.1
-Requires:	libTD_Gi.so.1
-Requires:	libTD_Gs.so.1
-Requires:	libTD_PDFToolkit.so.1
-Requires:	libTD_PdfExport.so.1
-Requires:	libTD_Root.so.1
-Requires:	libTD_SpatialIndex.so.1
-Requires:	libTD_SvgExport.so.1
-Requires:	libW3dTk.so.1
-Requires:	libWhipTk.so.1
-Requires:	libX11.so.6
-Requires:	libc.so.6
-Requires:	libc.so.6(GLIBC_2.0)
-Requires:	libc.so.6(GLIBC_2.1)
-Requires:	libc.so.6(GLIBC_2.1.2)
-Requires:	libc.so.6(GLIBC_2.1.3)
-Requires:	libc.so.6(GLIBC_2.2)
-Requires:	libc.so.6(GLIBC_2.3)
-Requires:	libc.so.6(GLIBC_2.3.2)
-Requires:	libc.so.6(GLIBC_2.3.4)
-Requires:	libc.so.6(GLIBC_2.4)
-Requires:	libcups.so.2
-Requires:	libdl.so.2
-Requires:	libdl.so.2(GLIBC_2.0)
-Requires:	libdl.so.2(GLIBC_2.1)
-Requires:	libfxsisl.so.1
-Requires:	libgcc_s.so.1
-Requires:	libgcc_s.so.1(GCC_3.0)
-Requires:	libgcc_s.so.1(GLIBC_2.0)
-Requires:	libm.so.6
-Requires:	libm.so.6(GLIBC_2.0)
-Requires:	libm.so.6(GLIBC_2.1)
-Requires:	libphonon.so.4
-Requires:	libpthread.so.0
-Requires:	libpthread.so.0(GLIBC_2.0)
-Requires:	libpthread.so.0(GLIBC_2.1)
-Requires:	libpthread.so.0(GLIBC_2.2)
-Requires:	libstdc++.so.6
-Requires:	libstdc++.so.6(CXXABI_1.3)
-Requires:	libstdc++.so.6(GLIBCXX_3.4)
-Requires:	libstdc++.so.6(GLIBCXX_3.4.11)
-Requires:	libstdc++.so.6(GLIBCXX_3.4.9)
-Requires:	libz.so.1
-Requires:	rpmlib(CompressedFileNames) <= 3.0.4-1
-Requires:	rpmlib(PayloadFilesHavePrefix) <= 4.0-1
-Requires:	rtld(GNU_HASH)
+#Requires:	/bin/bash
+#Requires:	/bin/sh
+#Requires:	libAecGeometry.so.1
+#Requires:	libDDKERNEL.so.1
+#Requires:	libDwfCore.so.1
+#Requires:	libDwfToolkit.so.1
+#Requires:	libFXCommandsBase.so.1
+#Requires:	libFXCrashRpt.so.1
+#Requires:	libFXExport.so.1
+#Requires:	libFXLISP.so.1
+#Requires:	libFXRenderBase.so.1
+#Requires:	libFxFileDialogs.so.1
+#Requires:	libFxImages.so.1
+#Requires:	libQtCore.so.4
+#Requires:	libQtDBus.so.4
+#Requires:	libQtGui.so.4
+#Requires:	libQtHelp.so.4
+#Requires:	libQtMultimedia.so.4
+#Requires:	libQtNetwork.so.4
+#Requires:	libQtOpenGL.so.4
+#Requires:	libQtSql.so.4
+#Requires:	libQtSvg.so.4
+#Requires:	libQtWebKit.so.4
+#Requires:	libQtXml.so.4
+#Requires:	libQtXmlPatterns.so.4
+#Requires:	libTD_AcisBuilder.so.1
+#Requires:	libTD_Alloc.so.1
+#Requires:	libTD_Br.so.1
+#Requires:	libTD_BrepRenderer.so.1
+#Requires:	libTD_Db.so.1
+#Requires:	libTD_DbRoot.so.1
+#Requires:	libTD_Dwf7Export.so.1
+#Requires:	libTD_FtFontEngine.so.1
+#Requires:	libTD_Ge.so.1
+#Requires:	libTD_Gi.so.1
+#Requires:	libTD_Gs.so.1
+#Requires:	libTD_PDFToolkit.so.1
+#Requires:	libTD_PdfExport.so.1
+#Requires:	libTD_Root.so.1
+#Requires:	libTD_SpatialIndex.so.1
+#Requires:	libTD_SvgExport.so.1
+#Requires:	libW3dTk.so.1
+#Requires:	libWhipTk.so.1
+#Requires:	libX11.so.6
+#Requires:	libc.so.6
+#Requires:	libc.so.6(GLIBC_2.0)
+#Requires:	libc.so.6(GLIBC_2.1)
+#Requires:	libc.so.6(GLIBC_2.1.2)
+#Requires:	libc.so.6(GLIBC_2.1.3)
+#Requires:	libc.so.6(GLIBC_2.2)
+#Requires:	libc.so.6(GLIBC_2.3)
+#Requires:	libc.so.6(GLIBC_2.3.2)
+#Requires:	libc.so.6(GLIBC_2.3.4)
+#Requires:	libc.so.6(GLIBC_2.4)
+#Requires:	libcups.so.2
+#Requires:	libdl.so.2
+#Requires:	libdl.so.2(GLIBC_2.0)
+#Requires:	libdl.so.2(GLIBC_2.1)
+#Requires:	libfxsisl.so.1
+#Requires:	libgcc_s.so.1
+#Requires:	libgcc_s.so.1(GCC_3.0)
+#Requires:	libgcc_s.so.1(GLIBC_2.0)
+#Requires:	libm.so.6
+#Requires:	libm.so.6(GLIBC_2.0)
+#Requires:	libm.so.6(GLIBC_2.1)
+#Requires:	libphonon.so.4
+#Requires:	libpthread.so.0
+#Requires:	libpthread.so.0(GLIBC_2.0)
+#Requires:	libpthread.so.0(GLIBC_2.1)
+#Requires:	libpthread.so.0(GLIBC_2.2)
+#Requires:	libstdc++.so.6
+#Requires:	libstdc++.so.6(CXXABI_1.3)
+#Requires:	libstdc++.so.6(GLIBCXX_3.4)
+#Requires:	libstdc++.so.6(GLIBCXX_3.4.11)
+#Requires:	libstdc++.so.6(GLIBCXX_3.4.9)
+#Requires:	libz.so.1
+#Requires:	rpmlib(CompressedFileNames) <= 3.0.4-1
+#Requires:	rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+#Requires:	rtld(GNU_HASH)
+Requires:	libaudio.so.2
 
 Provides:	lfbmp.so.18  
 Provides:	lfcmp.so.18  
@@ -211,8 +210,9 @@ Provides:	draftsight(x86-32) = 2014.3.70-2
 ExclusiveArch:	i686
 
 %description
-Free CAD software for your DWG files by Dassault Systèmes (standalone license; activation required).
-DraftSight lets professional CAD users, students and educators create, edit and view DWG files. DraftSight runs on Windows®, Mac® and Linux.
+Free CAD software for your DWG files by Dassault Systèmes (standalone license).
+DraftSight lets professional CAD users, students and educators create, edit and
+view DWG files. DraftSight runs on Windows®, Mac® and Linux.
 
 %prep
 %setup -q -c -T
@@ -299,16 +299,15 @@ update-desktop-database &> /dev/null || :
 %posttrans
 gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 
-
-%clean
-rm -rf %{buildroot}
-
-
 %files
-%defattr(-, root, root)
 /opt/dassault-systemes
 /var/opt/dassault-systemes
 
 %changelog
-* Sun Jun 01 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.3.70-2
+* Sun Jun 29 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.2.70-2.R.2
+- remove the most "Requires" strings
+- add dependence on libaudio.so.2
+- clean up spec file
+
+* Sun Jun 01 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.3.70-2.R.1
 - initial build for Fedora
