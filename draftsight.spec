@@ -220,11 +220,11 @@ gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 %{_localstatedir}/opt/dassault-systemes
 
 %changelog
-* Mon Jun 30 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.2.70-2.R.3
+* Mon Jun 30 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.3.70-2.R.3
 - remove some useless "Provides" strings
 - clean up spec file
 
-* Sun Jun 29 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.2.70-2.R.2
+* Sun Jun 29 2014 carasin berlogue <carasin DOT berlogue AT mail DOT ru> - 2014.3.70-2.R.2
 - remove the most "Requires" strings
 - add dependence on libaudio.so.2
 - clean up spec file
